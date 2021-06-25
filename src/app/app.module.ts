@@ -4,6 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
+import { ElementsModule } from './elements/elements.module';
+import { ViewsModule } from './views/views.module';
+import { CollectionsModule } from './collections/collections.module';
+import { ModsModule } from './mods/mods.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +16,11 @@ import { CardComponent } from './card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ElementsModule,
+    ViewsModule,
+    CollectionsModule,
+    ModsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

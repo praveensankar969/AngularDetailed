@@ -31,6 +31,18 @@ export class AppComponent {
     {
       imageUrl : "assets/mountain.jpeg",
       name : "Prem"
+    },
+    {
+      imageUrl : "assets/tree.jpeg",
+      name : "Vysakh"
+    },
+    {
+      imageUrl : "assets/tree.jpeg",
+      name : "Vishnu"
+    },
+    {
+      imageUrl : "assets/mountain.jpeg",
+      name : "Prem"
     }
   ];
 
