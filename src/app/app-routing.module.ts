@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
+import { CardComponent } from './card/card.component';
 
 const routes: Routes = [
   {path:"elements", loadChildren:()=>
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:"mods", loadChildren:()=>
   import("./mods/mods.module").then(m=> m.ModsModule)
   },
+  {path: "cards", component:CardComponent},
   {path: "", component:HomeComponent},
   {path: 'not-found', component: NotFoundComponent},
   {path: '**', redirectTo:'/not-found'}

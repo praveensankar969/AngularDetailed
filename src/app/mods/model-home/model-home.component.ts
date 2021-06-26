@@ -13,6 +13,7 @@ export class ModelHomeComponent implements OnInit {
   }
 
   OnClick(){
+    console.log("Clicked")
     this.clicked = !this.clicked;
   }
 

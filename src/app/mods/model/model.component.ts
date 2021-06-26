@@ -15,7 +15,7 @@ export class ModelComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
-    document.body.removeChild(this.elemntRef.nativeElement);   
+    this.elemntRef.nativeElement.remove(); 
   }
   OnClick(){
     this.close.emit();

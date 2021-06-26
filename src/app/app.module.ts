@@ -15,14 +15,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
     HomeComponent,
     NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    ViewsModule,
-    ModsModule,
     AppRoutingModule
   ],
   providers: [],
