@@ -1,28 +1,12 @@
-<div class="container">
-  <nav aria-label="Pages">
-    <ul class="pagination">
-      <li class="page-item" [ngClass]="{'disabled': currentPage ===0 }">
-        <a class="page-link" (click) = "currentPage = selectedPage-1; selectedPage=selectedPage-1">Previous</a>
-      </li>
-      
-      <ng-container *ngFor="let item of cardDatas; let i = index">
-        <li 
-        class="page-item" 
-        [ngClass]="{active : i === selectedPage}"
-        *ngIf="i<4">
-          <a class="page-link" href="#"  (click) = "currentPage = i; selectedPage=i">{{i+1}}</a>
-        </li>
-      </ng-container>     
-      
-      <li class="page-item" [ngClass]="{'disabled': currentPage ===cardDatas.length-1 } ">
-        <a class="page-link" href="#" (click) = "currentPage = selectedPage+1; selectedPage=selectedPage+1">Next</a>
-      </li>
-    </ul>
-  </nav>
+<div class="ui container">
+  <div class="ui secondary pointing menu">
+    <a class="item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"> Home</a>
+    <a class="item" routerLink="/elements" routerLinkActive="active"> Elements</a>
+    <a class="item" routerLink="/collections" routerLinkActive="active"> Collections</a>
+    <a class="item" routerLink="/views" routerLinkActive="active"> Views</a>
+    <a class="item" routerLink="/mods" routerLinkActive="active"> Mods</a>
+  </div>
 </div>
-
-<div class="container">
-  <label> {{cardDatas[currentPage].name}}</label>
-  <img src={{cardDatas[currentPage].imageUrl}} alt="Image">
+<div class="ui container">
+  <router-outlet></router-outlet>
 </div>
-

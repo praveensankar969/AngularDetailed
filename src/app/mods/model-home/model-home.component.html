@@ -1,0 +1,6 @@
+<div class="ui raised container segment">
+    <h2>Mods Component</h2>
+    <div class="ui divider"></div>
+    <button (click) = "OnClick()"> View Modal</button>
+    <app-model (close) = "OnClick()" *ngIf="clicked" > </app-model>
+</div>

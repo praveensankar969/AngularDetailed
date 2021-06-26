@@ -1,0 +1,26 @@
+<div class="ui raised container segment">
+    <h2>Table Component</h2>
+    <div class="ui divider"></div>
+    <app-table [data] = "data" [header]="header"> </app-table>
+</div>
+<div class="ui raised container segment">
+    <h2>Tab Menu</h2>
+    <div class="ui divider"></div>
+    <div class="ui grid">
+        <div class="four wide column">
+            <div class="ui vertical fluid tabluar menu">
+                <a class= "item" routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"> Github</a>
+                <a class= "item" routerLink="companies" routerLinkActive="active"> Companies</a>
+                <a class= "item" routerLink="partners" routerLinkActive="active"> Partners</a>
+            </div>
+        </div>
+        <div class="twelve wide stretched column">
+            <div class="ui segment">
+                <router-outlet> </router-outlet>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
