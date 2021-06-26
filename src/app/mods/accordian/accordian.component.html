@@ -1,0 +1,9 @@
+<div class="ui styled fluid accordion" *ngFor="let item of data; let i=index">
+    <div class="title" (click) = "OnClick(i)" [ngClass] = "{active : selected===i}">
+      <i class="dropdown icon"></i>
+      {{item.title}}
+    </div>
+    <div class="content" [ngClass] = "{active : selected===i}">
+      <p>{{item.content}}</p>
+    </div>
+  </div>

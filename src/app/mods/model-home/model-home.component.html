@@ -4,3 +4,9 @@
     <button class="ui button" (click) = "OnClick()"> View Modal</button>
     <app-model (close) = "OnClick()" *ngIf="clicked" > </app-model>
 </div>
+<div class="ui raised container segment">
+    <h2>Accordion Component</h2>
+    <div class="ui divider"></div>
+    <app-accordian [data]="accordion"></app-accordian>
+</div>
+
