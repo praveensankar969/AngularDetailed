@@ -1,0 +1,11 @@
+<div class="ui container">
+    <div class="ui search">
+        <div class="ui icon input">
+          <form (submit) = "EmitData($event)">
+            <input class="prompt" type="text" placeholder="Search..." (input) = "GetValue($event)">
+            <i class="search icon"></i>
+          </form>
+        </div>
+        <div class="results"></div>
+      </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="ui raised container segment">
+    <h2>Wikipedia API Search</h2>
+</div>
+<div class="ui raised container segment">
+    <app-wiki-search (searchInput) = "GetInput($event)"> </app-wiki-search>
+    <div class="ui divider"></div>
+    <app-wiki-result-table [data]="searchResult"> </app-wiki-result-table>
+</div>

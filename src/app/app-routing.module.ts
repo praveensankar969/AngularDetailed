@@ -17,6 +17,9 @@ const routes: Routes = [
   {path:"mods", loadChildren:()=>
   import("./mods/mods.module").then(m=> m.ModsModule)
   },
+  {path:"wiki-search", loadChildren:()=>
+  import("./wiki/wiki.module").then(m=> m.WikiModule)
+  },
   {path: "cards", component:CardComponent},
   {path: "", component:HomeComponent},
   {path: 'not-found', component: NotFoundComponent},

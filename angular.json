@@ -71,7 +71,8 @@
               "browserTarget": "Cards:build:production"
             },
             "development": {
-              "browserTarget": "Cards:build:development"
+              "browserTarget": "Cards:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

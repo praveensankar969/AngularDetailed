@@ -1,0 +1,15 @@
+<table class="ui celled table">
+    <thead>
+      <tr>
+        <th *ngFor="let head of header">{{head}}</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of data">
+        <td >{{d.title}}</td>    
+        <td >{{d.wordcount}}</td>
+        <td >{{d.snippet}}</td>
+      </tr>
+    </tbody>
+  </table>
+
