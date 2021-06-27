@@ -1,0 +1,10 @@
+<form [formGroup]= "cardForm">
+    <label class="label">Name : </label>
+    <input formControlName = "name">
+    <label class="label">Card Number : </label>
+    <input formControlName = "cardno">
+</form>
+<div class="ui divider"></div>
+<div class="segment">
+    {{cardForm.valid}}
+</div>

@@ -1,23 +1,10 @@
 export interface Result {
-    batchComplete: string,
-    continue: {
-        sroffset: number,
-        continue: string
-    },
     query: {
-        searchinfo: {
-            totalhits: number,
-            suggestion: string,
-            suggestionsnippet: string
-        },
-        search: [{
-            ns: number,
+        search: {
             title: string,
             pageid: number,
-            size: number,
             wordcount: number,
-            snippet: string,
-            timestamp: string
-        }]
+            snippet: string
+        }[]
     }
 }

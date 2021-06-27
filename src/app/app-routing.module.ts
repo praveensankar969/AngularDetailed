@@ -20,6 +20,12 @@ const routes: Routes = [
   {path:"wiki-search", loadChildren:()=>
   import("./wiki/wiki.module").then(m=> m.WikiModule)
   },
+  {path:"fetch-photo", loadChildren:()=>
+  import("./photofetch/photofetch.module").then(m=> m.PhotofetchModule)
+  },
+  {path:"credit-card", loadChildren:()=>
+  import("./creditcard/creditcard.module").then(m=> m.CreditcardModule)
+  },
   {path: "cards", component:CardComponent},
   {path: "", component:HomeComponent},
   {path: 'not-found', component: NotFoundComponent},

@@ -17,9 +17,8 @@ export class WikiSearchHomeComponent implements OnInit {
 
   GetInput(value : string){
     this.searchQuery = value;
-    console.log(this.searchQuery);
     console.log(this.service.SearchTerm(this.searchQuery).subscribe(res=> {
-      this.searchResult = res.query.search;
+      this.searchResult = res;
     }));
     
   }

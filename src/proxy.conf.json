@@ -3,5 +3,12 @@
         "target": "https://en.wikipedia.org",
         "secure": false,
         "logLevel": "debug"
+    },
+    "/photos/*": {
+        "target": "https://api.unsplash.com",
+        "secure": false,
+        "logLevel": "debug"
     }
+
+   
 }

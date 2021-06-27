@@ -1,0 +1,10 @@
+<div class="ui raised container segment">
+    <h3>Photo Fetcher</h3>
+    <button class="ui button" (click)="OnFetch()">
+        Fetch Photo
+    </button>
+
+</div>
+<div class="ui raised contanier segment wid" *ngIf="imgUrl">
+    <img src="{{imgUrl}}">
+</div>
