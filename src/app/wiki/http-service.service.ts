@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { BehaviorSubject, Observable, throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 import { Result } from './wiki-result-interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HttpService {
+
+  
 
   constructor(private http: HttpClient){
   }
@@ -22,6 +24,9 @@ export class HttpService {
           srsearch : term,
           origin : "*"
         }
-      });
+      }).pipe(catchError(err=>{
+        console.log(err);
+        return throwError(err); 
+      }));
   }
 }
