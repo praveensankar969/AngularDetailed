@@ -6,9 +6,9 @@
     </thead>
     <tbody>
       <tr *ngFor="let d of data">
-        <td >{{d.title}}</td>    
+        <td ><a target = _blank [href] ="  'https://en.wikipedia.org?curid='+ d.pageid  ">{{d.title}}</a></td>    
         <td >{{d.wordcount}}</td>
-        <td >{{d.snippet}}</td>
+        <td [innerHtml]= "d.snippet"></td>
       </tr>
     </tbody>
   </table>
